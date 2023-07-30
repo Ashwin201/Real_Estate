@@ -1,0 +1,90 @@
+.navbar
+{
+    /* padding: 0 13rem; */
+    background-color: black;
+    height: 9vh;
+    border: none;
+   
+}
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbar-nav .nav-link
+{
+    color:white;
+    margin: 0 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .btn:hover{
+    cursor: pointer;
+    transform: scale(.95);
+    transition: .5s ease-in-out ;
+}
+
+
+.navbar .menubar {
+    display: none;
+}
+.navbar .menubar .bar{
+    font-size: 3.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media (max-width:991px) {
+    .navbar
+{
+    padding: 0 1.5rem;
+    position: relative;
+  width: 100%;
+
+}
+.navbar .menubar{
+    display: block;
+}
+.navbar .navbar-nav
+{
+     
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 7rem;
+    right: -30rem;
+    width: 22rem;
+    height: 50vh;
+    border-radius:.4rem;
+    background-color: #fefeff;
+    transition: all 400ms ease-in-out;
+
+}
+.navbar .navbar-nav .nav-link
+{
+    
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.navbar .navbar-nav .btn a
+{
+    color: white;
+    padding: .5px 1rem ;
+    border-radius:.4rem;
+
+}
+}
+
+
+@media (max-width:576px) {
+    .navbar
+{
+    padding: 0 1.5rem ;
+}
+}

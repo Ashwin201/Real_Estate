@@ -1,0 +1,46 @@
+.explore{
+    margin-top: 9rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.e-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    background-color:#4066ff ;
+    border-radius: 1rem;
+}
+.main-text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+.second-text
+{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+.e-btn
+{
+    background-color:rgb(70, 107, 254,.8);
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    border: 3px solid white;
+    width: 16rem;
+    padding: 5px 1rem;
+}
+
+.e-btn:hover{
+    background-color: white;
+    color: #4066ff;
+    border: 3px solid  #4066ff ;
+    transition: .5s ease-in-out;
+
+}

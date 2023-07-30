@@ -1,0 +1,63 @@
+.footer
+{
+    margin: 0 1.5rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+.f-wrapper
+{
+    display: flex;
+    
+
+}
+
+.f-wrapper .f-left
+{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+
+.f-wrapper .f-left img{
+    width: 10rem;
+    height: auto;
+}
+.f-wrapper .f-left .purpose
+{
+    font-size: 1.6rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.f-wrapper .f-right
+{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+
+}
+.f-wrapper .f-right .info
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1f3e72;
+}
+.f-wrapper .f-right .address
+{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: grey;
+}
+.f-wrapper .f-right .creator
+{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: grey;
+}
+.f-wrapper .f-right .creator .name
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4066ff;
+}
