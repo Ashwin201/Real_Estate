@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+
+
+/* Code to remove blue highlight when tapping links in mobile */
+input,
+textarea,
+button,
+span,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:focus,
+a:visited,
+a:active,
+span:focus,
+span:visited,
+span:active,
+div:focus,
+div:visited,
+div:active {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Custom Css for Scroll bars */
+::-webkit-scrollbar {
+  width: 0rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(209, 21, 21);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--themee-color);
+}
+
+
+html {
+  box-shadow: none;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.container {
+  padding: 0 15rem;
+}
+@media (max-width: 1250px) {
+  .container {
+    padding: 0rem 0rem;
+  }
+}
+@media (max-width: 576px) {
+
+  .container{
+    padding: 0rem 3rem;
+  }
+  .header .container
+  {
+    padding: 0rem 1.5rem;
+    
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ============================================================================= */
+
+.title {
+  font-size: 2.5rem;
+  color: var(--theme-color);
+  font-weight: 600;
+}
+.subtitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: rgb(8, 8, 50);
+}
+.description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: grey;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 576px) {
+  .subtitle {
+    font-size: 3rem;
   }
 }
