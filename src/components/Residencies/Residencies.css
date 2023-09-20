@@ -1,75 +1,71 @@
-
-.r-wrapper
-{
-position: relative;
-overflow-x: hidden;
-padding-bottom: 6rem;
+.r-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 6rem;
+  z-index: 1;
 }
 
-.r-card
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items:flex-start;
-    flex-direction: column;
-    max-width: max-content;
-    padding:  1.5rem;
-    border-radius: 1rem;
-    margin: 1.5rem auto;
-    transition: all 400ms ease-in;
+.r-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: max-content;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 1.5rem auto;
+  transition: all 400ms ease-in;
 }
 
-.r-card:hover{
-    scale: 1.025;
-    cursor: pointer;
-    background: linear-gradient(180deg,rgba(255,255,255,0)0%,
-    rgba(136,160,255,.46)217.961%);
-    /* box-shadow: 0 72px 11px -13px rgba(136,160,255,.21); */
+.r-card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(136, 160, 255, 0.46) 217.961%
+  );
+  /* box-shadow: 0 72px 11px -13px rgba(136,160,255,.21); */
 }
-.swiper-horizontal
-{
-    overflow-y: visible;
-}
-
-.r-card img{
-    width: 100%;
-    max-width: 30rem;
-}
-.r-card .r-price .dollar{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--theme-color);
+.swiper-horizontal {
+  overflow-y: visible;
 }
 
-.r-card .r-price .price{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: grey;
+.r-card img {
+  width: 100%;
+  max-width: 30rem;
+}
+.r-card .r-price .dollar {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--theme-color);
 }
 
-.r-card .cardname
-{
-    color: #1f3e72;
-    font-weight: 600;
-    font-size: 2rem;
+.r-card .r-price .price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: grey;
 }
 
-.r-card .carddetail
-{
-    max-width: 25rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: grey;
- }
-
- .swipe
-{
-   
-   color: grey;
-   font-size: 1.7rem;
-   font-weight: 500;
+.r-card .cardname {
+  color: #1f3e72;
+  font-weight: 600;
+  font-size: 2rem;
 }
- /*
+
+.r-card .carddetail {
+  max-width: 25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: grey;
+}
+
+.swipe {
+  color: grey;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+/*
 .r-buttons
 {
     position: absolute;
@@ -84,22 +80,11 @@ padding-bottom: 6rem;
     z-index: 100;
 } */
 
-
-
-
-
-
-
-
-
-@media (max-width:768px)
-{
-    .r-wrapper
-{
-
-padding-bottom: 5rem;
-}
-/* 
+@media (max-width: 768px) {
+  .r-wrapper {
+    padding-bottom: 5rem;
+  }
+  /* 
     .swipe
 {
     position: absolute;

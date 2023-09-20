@@ -4,18 +4,22 @@ import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 
-import hero from "../../images/hero-image.png"
+import hero from "../../images/hero-image.png";
 const Hero = () => {
   return (
     <div>
       <section className="hero">
-        <div className="hero-wrapper container">
+        <div className="hero-wrapper container mt-lg-5 pt-md-5">
           <div className="hero-container row">
             {/* Left Side */}
             <div className="hero-left col-lg-6 py-4 py-lg-0 my-5 my-lg-0  d-flex flex-column justify-content-lg-start justify-content-center">
               <div className="hero-title">
-                <motion.h1  initial={{y:"3rem" , opacity:0}}  animate={{y:0 , opacity:1}} transition={{duration:4, type:"spring"}}
-                 className="mb-5">
+                <motion.h1
+                  initial={{ y: "3rem", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 4, type: "spring" }}
+                  className="mb-5"
+                >
                   Discover <br /> Most Suitable <br /> Property
                 </motion.h1>
                 <span></span>
@@ -72,8 +76,13 @@ const Hero = () => {
 
             {/* Right Side */}
             <div className="hero-right col-lg-6 mt-5 mt-lg-0 d-flex  justify-content-lg-end justify-content-center">
-              <motion.div className="img-container " initial={{x:"3rem" , opacity:0}}  animate={{x:0 , opacity:1}} transition={{duration:4 , type:"spring"}}>
-                <img src={hero} alt="hero"  />
+              <motion.div
+                className="img-container "
+                initial={{ x: "3rem", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 4, type: "spring" }}
+              >
+                <img src={hero} alt="hero" />
               </motion.div>
             </div>
           </div>
