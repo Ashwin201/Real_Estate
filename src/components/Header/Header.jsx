@@ -25,15 +25,19 @@ const Header = () => {
 
             <OutsideClickHandler
               onOutsideClick={() => {
-                setMenuOpend(true);
+                setMenuOpend(false);
               }}
             >
               <ul
-                className="navbar-nav ms-auto"
+                className="navbar-nav ms-auto d-flex justify-content-center align-content-center text-center"
                 style={getMenuStyles(menuOpend)}
               >
                 <li className="nav-item">
-                  <a className="nav-link" href="#companies">
+                  <a
+                    className="nav-link"
+                    href="#companies"
+                    onClick={() => setMenuOpend(false)}
+                  >
                     Companies
                   </a>
                 </li>
@@ -42,24 +46,37 @@ const Header = () => {
                     className="nav-link active"
                     aria-current="page"
                     href="#residency"
+                    onClick={() => setMenuOpend(false)}
                   >
                     Residencies
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#values">
+                  <a
+                    className="nav-link"
+                    href="#values"
+                    onClick={() => setMenuOpend(false)}
+                  >
                     Our Values
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link  mb-3 mb-lg-0" href="#start">
+                  <a
+                    className="nav-link  "
+                    href="#start"
+                    onClick={() => setMenuOpend(false)}
+                  >
                     Get Started
                   </a>
                 </li>
                 <button className="btn btn-primary btn-sm ms-4 mb-3 mb-lg-0 ">
-                  <a href="#connect" className="nav-link ">
+                  <a
+                    href="#connect"
+                    className="nav-link "
+                    onClick={() => setMenuOpend(false)}
+                  >
                     Contact
                   </a>
                 </button>
