@@ -36,7 +36,7 @@ const Header = () => {
                   <a
                     className="nav-link"
                     href="#companies"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Companies
                   </a>
@@ -46,7 +46,7 @@ const Header = () => {
                     className="nav-link active"
                     aria-current="page"
                     href="#residency"
-                    onClick={() => setMenuOpend(false)}
+                   onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Residencies
                   </a>
@@ -56,7 +56,7 @@ const Header = () => {
                   <a
                     className="nav-link"
                     href="#values"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Our Values
                   </a>
@@ -66,7 +66,7 @@ const Header = () => {
                   <a
                     className="nav-link  "
                     href="#start"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Get Started
                   </a>
@@ -75,7 +75,7 @@ const Header = () => {
                   <a
                     href="#connect"
                     className="nav-link "
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Contact
                   </a>
