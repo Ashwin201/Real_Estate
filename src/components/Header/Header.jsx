@@ -29,7 +29,7 @@ const Header = () => {
               }}
             >
               <ul
-                className="navbar-nav ms-auto d-flex justify-content-center align-content-center text-center"
+                className="navbar-nav ms-auto"
                 style={getMenuStyles(menuOpend)}
               >
                 <li className="nav-item">
