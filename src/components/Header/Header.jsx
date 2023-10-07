@@ -25,7 +25,7 @@ const Header = () => {
 
             <OutsideClickHandler
               onOutsideClick={() => {
-                setMenuOpend(false);
+                setMenuOpend(true);
               }}
             >
               <ul
