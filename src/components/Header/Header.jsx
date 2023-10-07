@@ -25,57 +25,52 @@ const Header = () => {
 
             <OutsideClickHandler
               onOutsideClick={() => {
-                setMenuOpend(true);
+                setMenuOpend(false);
               }}
             >
               <ul
                 className="navbar-nav ms-auto"
                 style={getMenuStyles(menuOpend)}
               >
-                <li className="nav-item">
+                <li className="nav-item"  onClick={() => setMenuOpend((prev) => !prev)} >
                   <a
                     className="nav-link"
                     href="#companies"
-                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Companies
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item"  onClick={() => setMenuOpend((prev) => !prev)} >
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#residency"
-                   onClick={() => setMenuOpend((prev) => !prev)}
-                  >
+                    href="#residency"                  >
                     Residencies
                   </a>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => setMenuOpend((prev) => !prev)}>
                   <a
                     className="nav-link"
                     href="#values"
-                    onClick={() => setMenuOpend((prev) => !prev)}
+                    
                   >
                     Our Values
                   </a>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => setMenuOpend((prev) => !prev)}  >
                   <a
                     className="nav-link  "
-                    href="#start"
-                    onClick={() => setMenuOpend((prev) => !prev)}
-                  >
+                    href="#start">
                     Get Started
                   </a>
                 </li>
-                <button className="btn btn-primary btn-sm ms-4 mb-3 mb-lg-0 ">
+                <button className="btn btn-primary btn-sm ms-4 mb-3 mb-lg-0 " onClick={() => setMenuOpend((prev) => !prev)}
+                  >
                   <a
                     href="#connect"
                     className="nav-link "
-                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Contact
                   </a>
