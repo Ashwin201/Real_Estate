@@ -4,7 +4,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 
-import hero from "../../images/hero-image.png";
+import hero from "../../images/hero-image.webp";
 const Hero = () => {
   return (
     <div>

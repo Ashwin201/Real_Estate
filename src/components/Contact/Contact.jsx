@@ -3,7 +3,7 @@ import "./Contact.css";
 
 import * as icon from "react-bootstrap-icons";
 
-import contactimg from "../../images/contact.jpg"
+import contactimg from "../../images/contact.webp";
 const Contact = () => {
   return (
     <div>
@@ -45,11 +45,9 @@ const Contact = () => {
                   </div>
                   <button className="btn btn-primary">Message Us</button>
                 </div>
-                </div>
+              </div>
 
-
-                <div className="contact-methods">
-
+              <div className="contact-methods">
                 <div className="method d-flex flex-column p-3">
                   <div className="d-flex mb-4">
                     <span className="c-icon me-4">
@@ -76,13 +74,13 @@ const Contact = () => {
                   <button className="btn btn-primary ">Text Us</button>
                 </div>
               </div>
-            </div> 
+            </div>
 
             {/* RightSide/ */}
             <div className="c-right col-12 col-lg-6  d-flex justify-content-center align-content-center justify-content-lg-end align-content-lg-end">
-                <div className="c-img-container ">
-                    <img src={contactimg} alt="contact" />
-                </div>
+              <div className="c-img-container ">
+                <img src={contactimg} alt="contact" />
+              </div>
             </div>
           </div>
         </div>

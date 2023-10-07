@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./Header.css";
 import * as icon from "react-bootstrap-icons";
 import OutsideClickHandler from "react-outside-click-handler";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.webp";
 const Header = () => {
   const [menuOpend, setMenuOpend] = useState(false);
 
   const getMenuStyles = (menuOpend) => {
-    if (document.documentElement.clientWidth <= 991) {
+    if (document.documentElement.clientWidth <= 768) {
       return {
-        right: !menuOpend && "3rem",
+        right: menuOpend && "3rem",
       };
     }
   };
@@ -17,7 +17,7 @@ const Header = () => {
     <div>
       {/* navbar-expand-lg bg-body-tertiary */}
       <div className="header">
-        <nav className="navbar  navbar-expand-lg fixed-top py-md-2  ">
+        <nav className="navbar  navbar-expand-md fixed-top py-md-2  ">
           <div className="container">
             <a className="navbar-brand" href="#">
               <img src={logo} alt="logo" className="img-fluid" width={100} />

@@ -1,7 +1,7 @@
 import "./Footer.css";
 
 import React from "react";
-import logo2 from "../../images/logo2.png"
+import logo2 from "../../images/logo2.webp";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="row f-wrapper">
             {/* Left Side */}
             <div className="f-left col-12 col-md-6">
-              <img src={logo2} alt="footer logo" className="img-fluid "/>
+              <img src={logo2} alt="footer logo" className="img-fluid " />
               <span className="purpose mt-4">
                 Our vision is to make all people the best place to live for
                 them.
