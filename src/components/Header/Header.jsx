@@ -4,7 +4,7 @@ import * as icon from "react-bootstrap-icons";
 import OutsideClickHandler from "react-outside-click-handler";
 import logo from "../../images/logo.webp";
 const Header = () => {
-  const [menuOpend, setMenuOpend] = useState(false);
+  const [menuOpend, setMenuOpend] = useState(true);
 
   const getMenuStyles = (menuOpend) => {
     if (document.documentElement.clientWidth <= 768) {
@@ -36,7 +36,7 @@ const Header = () => {
                   <a
                     className="nav-link"
                     href="#companies"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Companies
                   </a>
@@ -46,7 +46,7 @@ const Header = () => {
                     className="nav-link active"
                     aria-current="page"
                     href="#residency"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Residencies
                   </a>
@@ -56,7 +56,7 @@ const Header = () => {
                   <a
                     className="nav-link"
                     href="#values"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Our Values
                   </a>
@@ -66,16 +66,16 @@ const Header = () => {
                   <a
                     className="nav-link  "
                     href="#start"
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Get Started
                   </a>
                 </li>
-                <button className="btn btn-primary btn-sm ms-4 mb-3 mb-lg-0 ">
+                <button className="btn btn-primary btn-sm mb-3  mt-4 mb-lg-0 ">
                   <a
                     href="#connect"
                     className="nav-link "
-                    onClick={() => setMenuOpend(false)}
+                    onClick={() => setMenuOpend((prev) => !prev)}
                   >
                     Contact
                   </a>
